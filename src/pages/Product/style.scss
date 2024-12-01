@@ -1,0 +1,825 @@
+.product{
+    .sec-head{
+        margin-bottom: 32px;
+        justify-content: space-between;
+        .sec-title{
+            color: #49296A;
+            margin: 0;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    
+        .knobs,
+        .layer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .button {
+            position: relative;
+            // top: 50%;
+            width: 154px;
+            height: 29px;
+            // margin: -20px auto 0 auto;
+            overflow: hidden;
+        }
+        .checkbox {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 3;
+        } 
+        .knobs {
+            z-index: 2;
+        } 
+        .layer {
+            width: 100%;
+            background-color: #ACACAC;
+            transition: 0.3s ease all;
+            z-index: 1;
+        }  
+        .button.r,
+        .button.r .layer {
+            border-radius: 100px;
+        }
+        #button-1 .knobs:after {
+            content: "مفعل";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 111px;
+            height: 29px;
+            color: #fff;
+            font-size: 13px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 2;
+            background-color: #A3D936;
+            border-radius: 20px;
+            transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+        } 
+        #button-1 .checkbox:active + .knobs:after {
+            width: 46px;
+            border-radius: 100px;
+        }  
+        #button-1 .checkbox:checked:active + .knobs:after {
+            margin-left: -26px;
+        }
+        #button-1 .checkbox:checked + .knobs:after {
+            content: "غير مفعل";
+            left: 0;
+            right: auto;
+            background-color: #f44336;
+        }  
+        #button-1 .checkbox:checked ~ .layer {
+            background-color: #fcebeb;
+        }
+    }
+
+}
+.card{
+    box-shadow: 0 4px 4px #00000025;
+    border: none;
+    .card-body{
+        padding: 22px 20px;
+    }
+    .title{
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+.main-data-section{
+    margin-bottom: 39px;
+    .main-data{
+        .css-b62m3t-container{
+            width: 70%;
+            margin-bottom: 22px!important;
+        }
+        .css-13cymwt-control{
+            border-radius: 10px;
+        }
+        .css-1p3m7a8-multiValue{
+            background-color: var(--link-color);
+            border-radius: 10px;
+            padding: 0  8px;
+            .css-v7duua{
+                display: none;
+            }
+            .css-9jq23d{
+                color: var(--purple-text);
+            }
+        }
+        .title{
+            margin-bottom: 31px;
+        }
+        .filed-input{
+            div{
+                width: 70%;
+                margin-bottom: 22px!important;
+            }
+            input{
+                border-radius: 10px;
+            }
+        }
+        .filed-textarea{
+            textarea{
+                width: 70%;
+                margin-bottom: 22px!important;
+                padding: 8px;
+                border-radius: 8px;
+                border:  1px solid #dedede;
+                max-height: 103px;
+                min-height: 103px;
+            }
+        }
+
+        .knobs,
+        .layer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .button {
+            position: relative;
+            // top: 50%;
+            width: 87px;
+            height: 29px;
+            // margin: -20px auto 0 auto;
+            overflow: hidden;
+        }
+        .checkbox {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 3;
+        } 
+        .knobs {
+            z-index: 2;
+        } 
+        .layer {
+            width: 100%;
+            background-color: var(--purple-text);
+            transition: 0.3s ease all;
+            z-index: 1;
+        }  
+        .button.r,
+        .button.r .layer {
+            border-radius: 100px;
+        }
+        #button-2 .knobs:after {
+            content: "عربي";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 61px;
+            height: 29px;
+            color: #fff;
+            font-size: 13px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 2;
+            background-color: var(--link-color);
+            border-radius: 20px;
+            transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+        } 
+    #button-2 .checkbox:active + .knobs:after {
+        width: 46px;
+        border-radius: 100px;
+    }  
+    #button-2 .checkbox:checked:active + .knobs:after {
+        margin-left: -26px;
+    }
+    #button-2 .checkbox:checked + .knobs:after {
+        content: "English";
+        left: 0;
+        right: auto;
+        background-color: var(--purple-text);
+    }  
+    #button-2 .checkbox:checked ~ .layer {
+        background-color: var(--link-color);
+    }
+    }
+}
+.stock-data{
+    margin-bottom: 37px;
+}
+.supplier-data{
+    .title{
+        margin-bottom: 35px;
+    }
+    .css-b62m3t-container{
+        width: 70%;
+        height: 40px;
+    }
+    .css-1u9des2-indicatorSeparator{
+        display: none;
+    }
+    .css-13cymwt-control,
+    .css-t3ipsp-control:hover{
+        border: none;
+        border-color: none;
+    }
+    .filedInput{
+        width: 75%;
+        .mb-3{
+            width: 100%;
+        }
+    }
+    input {
+        text-align: start!important;
+        border: none;
+    }
+    .add-more-resource{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .browse-suppliers{
+        margin-right: 40px;
+        display: flex;
+        gap: 18px;
+        margin-top: 33px;
+        align-items: center;
+        margin-bottom: 17px;
+        label{
+            color: var(--label-color);
+            font-weight: bold;
+            font-size: 12px;
+        }
+        button{
+            background-color: var(--link-color);
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            width: 200px;
+            height: 44px;
+            border: none;
+            border-radius: 15px;
+        }
+    }
+
+}
+.search-engine{
+    border: 1px solid var(--purple-text);
+    border-radius: 0 15px;
+    margin-top: 50px;
+    box-shadow: none;
+
+    .col-md-4{
+        .mb-3{
+            width: 85%;
+        }
+        input{
+            border-radius: 10px;
+        }
+        textarea{
+            border: 1px solid #dedede;
+            padding: .375rem .75rem;
+            border-radius: 10px;
+            height: 102px;
+            min-height: 102px;
+            max-height: 102px;
+        }
+    }
+}
+
+.buttons-section{
+    margin-top: 108px;
+    .main-buttons{
+        display: flex;
+        gap: 19px;
+        padding: 0 35px;
+
+        button{
+            border-radius: 10px;
+            // padding: 18px;
+            height: 80px;
+            width: 80px;
+            font-size: 12px;
+            font-weight: bold;
+            color: var(--purple-text);
+            background-color: #fff;
+            border:1px solid var(--purple-text);
+
+            span{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 90%;
+            }
+            img{
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+    .cancel-section{
+        button{
+            border-radius: 10px;
+            background-color: var(--purple-text);
+            height: 80px;
+            width: 80px;
+            border:1px solid var(--purple-text);
+        }
+    }
+}
+.purchase{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 0 35px;
+
+    button{
+        img{
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+
+        background: none;
+        border: none;
+        color: var(--purple-text);
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
+.ar .main-data-section,
+.en .stock-data-section{
+    padding-left: 30px;
+}
+.en .main-data-section,
+.ar .stock-data-section{
+    padding-right: 30px;
+}
+// Sales and Marketing
+.sales-and-marketing{
+    margin-top: 39px;
+    border-radius: 0;
+
+    .price-tag{
+        label{
+            color: var(--label-color);
+            font-size: 12px;
+            line-height: 2;
+            font-weight: bold;
+        }
+    }
+    .percentage-value{
+        margin-bottom: 18px;
+        gap: 24px;
+
+        label{
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: var(--label-color);
+        }
+        > div{
+            margin-bottom: 0!important;
+            width: 65%;
+        }
+    }
+    .discount-section{
+        .discount-icon{
+            align-items: center;
+            label{
+                color: var(--label-color);
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+        .discount{
+            display: flex;
+            gap: 49px;
+            margin-top: 6px;
+
+            .percentage{
+                background-color: var(--bg-color);
+                padding: 23px 41px;
+            }
+
+            .show-percentage{
+                div{
+                    gap: 6px;
+                    margin-top: 10px;
+                    margin-bottom: 16px;
+                    p{
+                        background-color: var(--purple-text);
+                        font-size: 30px;
+                        border-radius: 50%;
+                        color: #fff;
+                        text-align: center;
+                        padding: 3.5px 12px;
+                        line-height: 1;
+
+                        span{
+                            font-size: 12px;
+                            color: var(--link-color);
+                            display: block;
+                        }
+                    }
+                    button{
+                        background: none;
+                        border: none;
+                        color: var(--link-color);
+                    }
+                }
+                .add-new-offers{
+                    background-color: var(--link-color);
+                    color: #fff;
+                    height: 44px;
+                    border: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .percentage-radio-button{
+        display: flex;
+        gap: 29px;
+        margin-bottom: 19px;
+        font-size: 12px;
+        color: var(--label-color);
+
+        input {
+            display: none;
+        }
+        label {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            
+            font-weight: bold;
+            font-size: 13px;
+        
+            &:before {
+              content: "";
+              display: block;
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              right: 0;
+              top: 45%;
+              margin-top: -8px;
+              border: 3px solid var(--label-color);
+              border-radius: 50%;
+            }
+        
+            &:after {
+              content: "";
+              display: block;
+              position: absolute;
+              width: 14px;
+                height: 14px;
+                top: 21%;
+                right: 3px;          
+              margin-top: 0;
+              background: #fff;
+              border-radius: 50%;
+              transition: .2s ease-in-out;
+            }
+          }
+        
+          // .options :checked + label:after
+          :checked + label {
+            &:after {
+                height: 14px;
+                width: 14px;
+                margin-top: -6px;
+                right: 3px;    
+                top: 50%;
+                background: var(--purple-text);        
+            }
+          }
+    }
+    .selected{
+        background: var(--body-background);
+        padding: 34px 20px;
+        .MuiAutocomplete-root{
+            border: 1px solid var(--tag-color);
+            padding: 11px;
+            width: 100%;
+            min-height: 103px;
+        }
+        .css-o5oj2-MuiAutocomplete-root .MuiAutocomplete-tag{
+            background: var(--tag-color);
+            color: var(--purple-text);
+            border-radius: 0;
+            font-size: 12px;
+            font-weight: bold;
+            min-height: 29px;
+            height: auto;
+        }
+        .css-1dybbl5-MuiChip-label{
+            text-wrap: wrap;
+        }
+        .css-1ew92b2-MuiFormLabel-root-MuiInputLabel-root {
+            font-size: 12px;
+            font-weight: bold;
+            right: -16px;
+            left: auto;
+            color: #959595;
+        }
+        .css-16yb58i-MuiButtonBase-root-MuiChip-root .MuiChip-deleteIcon{
+            display: none;
+        }
+        .css-2hy7sk-MuiFormLabel-root-MuiInputLabel-root{
+            right: 0;
+            top: -18px;
+        }
+        .css-1uhhrmm-MuiAutocomplete-endAdornment {
+            left: -4px;
+            right: auto;
+            top: -10px;
+        }
+        .MuiInputBase-root{
+            min-height: 63px;
+        }
+        .MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-o5oj2-MuiAutocomplete-root .MuiAutocomplete-inputRoot,
+        .MuiAutocomplete-hasPopupIcon.css-o5oj2-MuiAutocomplete-root .MuiAutocomplete-inputRoot{
+            padding: 0;
+            align-items: flex-start;
+            margin-top: 15px;
+        }
+        .css-6h9cc6-MuiInputBase-root-MuiInput-root::before {
+            border: none;
+        }
+    }
+}
+
+// Stock Data Section{
+.stock-data-section{
+    input{
+        text-align: center;
+    }
+    .stock-title{
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        .title{
+            line-height: 1;
+        }
+    }
+    .filed-input{
+        margin-bottom: 25px;
+    }
+    .stock{
+        display: flex;
+        justify-content: end;
+        gap: 43px;
+        width: 75%;
+        margin-bottom: 39px;
+        p{
+            background-color: var(--purple-text);
+            font-size: 30px;
+            border-radius: 50%;
+            color: #fff;
+            text-align: center;
+            padding: 3.5px 8px;
+                line-height: 1;
+
+            span{
+                font-size: 12px;
+                color: var(--link-color);
+                display: block;
+            }
+        }
+        .browse-stock{
+            background-color: var(--link-color);
+            color: #fff;
+            height: 44px;
+            width: 200px;
+            border: none;
+            border-radius: 15px;
+        }
+    }
+    .switch {
+        position: relative;
+        width: 40px;
+        height: 15px;
+      }
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #8B4AA3;
+        transition: .4s;
+        border-radius: 30px;
+      }
+      .slider-card {
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        border-radius: 20px;
+        right: 0;
+        top: 0;
+        transition: .4s;
+        pointer-events: none;
+      }
+      .slider-card-face {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        transition: .4s transform;
+      }
+      .slider-card-front {
+        background-color: #E4A4FB;
+      }
+      input:checked ~ .slider-card {
+        left: 0;
+        right: auto;
+      }
+      input:checked ~ .slider {
+        background-color: #ACACAC;
+      }
+}
+.ar .sales-and-marketing .percentage-radio-button label {
+    padding-right: 25px;
+}
+.ar .sales-and-marketing .percentage-radio-button label:before{
+    right: 0;
+}
+.ar .sales-and-marketing .percentage-radio-button :checked + label:after,
+.ar .sales-and-marketing .percentage-radio-button label:after  {
+    right: 3px;
+}
+
+.en{
+    .browse-suppliers{
+        margin-left: 40px;
+    }
+    .sales-and-marketing{
+        .discount-section .discount .show-percentage div p {
+            padding: 3.5px 9.95px;
+        }
+        .percentage-radio-button{
+            &:checked + label:after,
+            label:after{
+                left: 3px;
+            }
+            label {
+                padding-left: 25px;
+                &:before{
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+.css-1jqq78o-placeholder,
+input::placeholder,
+textarea::placeholder{
+    font-size: 12px;
+    font-weight: bold;
+}
+.product-specification-definition{
+    .switch {
+        position: relative;
+        width: 40px;
+        height: 15px;
+      }
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #8B4AA3;
+        transition: .4s;
+        border-radius: 30px;
+      }
+      .slider-card {
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        border-radius: 20px;
+        right: 0;
+        top: 0;
+        transition: .4s;
+        pointer-events: none;
+      }
+      .slider-card-face {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        transition: .4s transform;
+      }
+      .slider-card-front {
+        background-color: #E4A4FB;
+      }
+      input:checked ~ .slider-card {
+        left: 0;
+        right: auto;
+      }
+      input:checked ~ .slider {
+        background-color: #ACACAC;
+      }
+
+    .MuiAutocomplete-root{
+        border: 1px solid #dedede;
+        padding: 11px;
+        width: 70%;
+        border-radius: 15px;
+        min-height: 103px;
+    }
+    .css-o5oj2-MuiAutocomplete-root .MuiAutocomplete-tag{
+        background: var(--tag-color);
+        color: var(--purple-text);
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        min-height: 29px;
+        height: auto;
+    }
+    .css-1dybbl5-MuiChip-label{
+        text-wrap: wrap;
+    }
+    .css-1ew92b2-MuiFormLabel-root-MuiInputLabel-root {
+        font-size: 12px;
+        font-weight: bold;
+        right: -16px;
+        left: auto;
+        color: #959595;
+    }
+    .css-16yb58i-MuiButtonBase-root-MuiChip-root .MuiChip-deleteIcon{
+        display: none;
+    }
+    .css-2hy7sk-MuiFormLabel-root-MuiInputLabel-root{
+        right: 0;
+        top: -18px;
+    }
+    .css-1uhhrmm-MuiAutocomplete-endAdornment {
+        left: -4px;
+        right: auto;
+        top: -10px;
+    }
+    .MuiInputBase-root{
+        min-height: 63px;
+    }
+    .MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-o5oj2-MuiAutocomplete-root .MuiAutocomplete-inputRoot,
+    .MuiAutocomplete-hasPopupIcon.css-o5oj2-MuiAutocomplete-root .MuiAutocomplete-inputRoot{
+        padding: 0;
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+    .css-6h9cc6-MuiInputBase-root-MuiInput-root::before {
+        border: none;
+    }
+}
+.upload-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .custum-file-upload {
+        margin-top: 76px;
+        margin-bottom: 59px;
+        display: flex;
+        gap: 15px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .custum-file-upload .icon svg {
+        height: 30px;
+    }
+    .custum-file-upload input {
+        display: none;
+    }
+    .missing-images{
+        display: flex;
+        gap: 22px;
+        justify-content: flex-end;
+    }
+}
