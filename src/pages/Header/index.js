@@ -1,9 +1,9 @@
 import { Col, Dropdown, Row } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import images from "../../assets"
-import './style.scss'
 import { useDispatch, useSelector } from 'react-redux';
 import { setLang } from '../../store/actions/Actions';
+import './style.scss'
 
 function Header() {
     const {t, i18n} = useTranslation();

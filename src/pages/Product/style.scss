@@ -823,3 +823,44 @@ textarea::placeholder{
         justify-content: flex-end;
     }
 }
+
+// Responsive
+@media (max-width: 500px) {
+    .ar .product-section,
+    .en .product-section{
+        padding: 0 16px;
+    }
+    .ar .main-data-section, .en .stock-data-section,
+    .en .main-data-section, .ar .stock-data-section {
+
+        padding: 0px;
+    }
+    form{
+        padding: 0 16px;
+    }
+    .supplier-data{
+        margin-bottom: 37px;
+    }
+    .sales-and-marketing .discount-section{
+        margin-bottom: 22px;
+    }
+    .sales-and-marketing .discount-section .discount{
+        flex-direction: column;
+    }
+    .buttons-section {
+        margin-top: 40px;
+
+        .d-flex {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 12px;
+        }
+        .purchase{
+            margin-top: 16px;
+        }
+    }
+    .upload-image .custum-file-upload {
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+}

@@ -47,3 +47,11 @@ input::placeholder{
 .en .header-buttons{
     padding-right: 72px;
 }
+
+// Responsive
+@media (max-width: 500px) {
+    .custom-header .search-input {
+        width: 85%;
+        margin: 12px auto;
+    }
+}

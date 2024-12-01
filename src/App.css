@@ -34,3 +34,19 @@
 .gutter{
     --bs-gutter-x: auto!important;
 }
+
+.ar .product-section{
+    padding-left: 70px;
+}
+.en .product-section{
+    padding-right: 70px;
+}
+/* Responsive */
+@media (max-width: 500px) {
+    .product-section{
+        padding: 0 16px;
+    }
+    .navbar-section{
+        display: none;
+    }
+}

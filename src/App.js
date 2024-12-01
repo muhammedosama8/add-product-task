@@ -12,13 +12,10 @@ function App() {
     <div className={`${lang}`}>
       <Header />
       <Row className='gutter'>
-        <Col md={3}>
+        <Col md={3} className='navbar-section'>
           <Navbar />
         </Col>
-        <Col md={9} style={{
-          paddingLeft: lang === 'ar' ? '70px' : '',
-          paddingRight: lang === 'en' ? '70px' : '',
-        }}>
+        <Col md={9} className='product-section'>
           <Product />
           <Footer />
         </Col>
