@@ -529,7 +529,7 @@
         .MuiFormLabel-root {
             font-size: 12px;
             font-weight: bold;
-            right: -16px;
+            right: -16px!important;
             left: auto;
             color: #959595;
         }
@@ -538,7 +538,7 @@
         }
         .MuiInputLabel-root{
             right: 0;
-            top: -18px;
+            top: 0;//-18px;
         }
         .MuiAutocomplete-endAdornment {
             left: -4px;
@@ -768,7 +768,7 @@ textarea::placeholder{
     .MuiInputLabel-root {
         font-size: 12px;
         font-weight: bold;
-        right: -16px;
+        right: -16px!important;
         left: auto;
         color: #959595;
     }
@@ -777,7 +777,7 @@ textarea::placeholder{
     }
     .MuiInputLabel-root{
         right: 0;
-        top: -18px;
+        top: 0; //-18px;
     }
     .MuiAutocomplete-endAdornment {
         left: -4px;
