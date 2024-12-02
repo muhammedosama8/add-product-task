@@ -514,7 +514,7 @@
             width: 100%;
             min-height: 103px;
         }
-        .css-o5oj2-MuiAutocomplete-root .MuiAutocomplete-tag{
+        .MuiAutocomplete-tag{
             background: var(--tag-color);
             color: var(--purple-text);
             border-radius: 0;
@@ -526,14 +526,14 @@
         .css-1dybbl5-MuiChip-label{
             text-wrap: wrap;
         }
-        .css-1ew92b2-MuiFormLabel-root-MuiInputLabel-root {
+        .MuiFormLabel-root {
             font-size: 12px;
             font-weight: bold;
             right: -16px;
             left: auto;
             color: #959595;
         }
-        .css-16yb58i-MuiButtonBase-root-MuiChip-root .MuiChip-deleteIcon{
+        .MuiChip-deleteIcon{
             display: none;
         }
         .css-2hy7sk-MuiFormLabel-root-MuiInputLabel-root{
@@ -548,8 +548,8 @@
         .MuiInputBase-root{
             min-height: 63px;
         }
-        .MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-o5oj2-MuiAutocomplete-root .MuiAutocomplete-inputRoot,
-        .MuiAutocomplete-hasPopupIcon.css-o5oj2-MuiAutocomplete-root .MuiAutocomplete-inputRoot{
+        .MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot,
+        .MuiAutocomplete-hasPopupIcon .MuiAutocomplete-inputRoot{
             padding: 0;
             align-items: flex-start;
             margin-top: 15px;
@@ -752,7 +752,7 @@ textarea::placeholder{
         border-radius: 15px;
         min-height: 103px;
     }
-    .css-o5oj2-MuiAutocomplete-root .MuiAutocomplete-tag{
+    .MuiAutocomplete-tag{
         background: var(--tag-color);
         color: var(--purple-text);
         border-radius: 10px;
