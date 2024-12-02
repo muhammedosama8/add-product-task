@@ -523,7 +523,7 @@
             min-height: 29px;
             height: auto;
         }
-        .css-1dybbl5-MuiChip-label{
+        .MuiChip-label{
             text-wrap: wrap;
         }
         .MuiFormLabel-root {
@@ -536,11 +536,11 @@
         .MuiChip-deleteIcon{
             display: none;
         }
-        .css-2hy7sk-MuiFormLabel-root-MuiInputLabel-root{
+        .MuiInputLabel-root{
             right: 0;
             top: -18px;
         }
-        .css-1uhhrmm-MuiAutocomplete-endAdornment {
+        .MuiAutocomplete-endAdornment {
             left: -4px;
             right: auto;
             top: -10px;
@@ -554,7 +554,7 @@
             align-items: flex-start;
             margin-top: 15px;
         }
-        .css-6h9cc6-MuiInputBase-root-MuiInput-root::before {
+        .MuiInputBase-root-MuiInput-root::before {
             border: none;
         }
     }
@@ -761,24 +761,24 @@ textarea::placeholder{
         min-height: 29px;
         height: auto;
     }
-    .css-1dybbl5-MuiChip-label{
+    .MuiChip-label{
         text-wrap: wrap;
     }
-    .css-1ew92b2-MuiFormLabel-root-MuiInputLabel-root {
+    .MuiInputLabel-root {
         font-size: 12px;
         font-weight: bold;
         right: -16px;
         left: auto;
         color: #959595;
     }
-    .css-16yb58i-MuiButtonBase-root-MuiChip-root .MuiChip-deleteIcon{
+    .MuiChip-deleteIcon{
         display: none;
     }
-    .css-2hy7sk-MuiFormLabel-root-MuiInputLabel-root{
+    .MuiInputLabel-root{
         right: 0;
         top: -18px;
     }
-    .css-1uhhrmm-MuiAutocomplete-endAdornment {
+    .MuiAutocomplete-endAdornment {
         left: -4px;
         right: auto;
         top: -10px;
@@ -786,13 +786,12 @@ textarea::placeholder{
     .MuiInputBase-root{
         min-height: 63px;
     }
-    .MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-o5oj2-MuiAutocomplete-root .MuiAutocomplete-inputRoot,
-    .MuiAutocomplete-hasPopupIcon.css-o5oj2-MuiAutocomplete-root .MuiAutocomplete-inputRoot{
+    .MuiAutocomplete-inputRoot{
         padding: 0;
         align-items: flex-start;
         margin-top: 15px;
     }
-    .css-6h9cc6-MuiInputBase-root-MuiInput-root::before {
+    .MuiInput-root::before {
         border: none;
     }
 }
