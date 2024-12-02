@@ -553,6 +553,7 @@
             padding: 0;
             align-items: flex-start;
             margin-top: 15px;
+            padding-right: 0 !important;
         }
         .MuiInputBase-root-MuiInput-root::before {
             border: none;
@@ -790,6 +791,7 @@ textarea::placeholder{
         padding: 0;
         align-items: flex-start;
         margin-top: 15px;
+        padding-right: 0 !important;
     }
     .MuiInput-root::before {
         border: none;
