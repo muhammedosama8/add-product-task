@@ -41,6 +41,7 @@
 .en .product-section{
     padding-right: 70px;
 }
+
 /* Responsive */
 @media (max-width: 500px) {
     .product-section{
