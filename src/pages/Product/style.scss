@@ -517,11 +517,11 @@
         .MuiAutocomplete-tag{
             background: var(--tag-color);
             color: var(--purple-text);
-            border-radius: 0;
             font-size: 12px;
             font-weight: bold;
             min-height: 29px;
             height: auto;
+            border-radius: 10px;
         }
         .MuiChip-label{
             text-wrap: wrap;
